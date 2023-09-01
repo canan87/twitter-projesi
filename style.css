@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0d8bd9;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 25px 25px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+    padding-top: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.tweet-area {
+    position: relative;
+    min-height: 130px;
+    max-height: 170px;
+    overflow-y: auto;
+}
+
+.editable {
+    position: relative;
+    z-index: 5;
+
+}
+
+.readonly {
+
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overSpan {
+    background-color: #FF6666;
+}
+
+.tweet-area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.placeholder {
+    color: #98a5b1;
+    position: absolute;
+    margin-top: 1px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.input {
+    outline: none;
+    min-height: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.input-box .privacy {
+    color: #1da1f2;
+    margin: 15px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    border-radius: 50px;
+
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.privacy:hover,
+.icons li:hover {
+    background: #e7f5fe;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: inline-flex;
+}
+
+.icons li {
+    list-style: none;
+    margin: 0 2px;
+    color: #1da1f2;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.bottom .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    color: #333;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 15px;
+    border-right: 1px solid #aab8c2;
+    padding-right: 15px;
+    display: none;
+
+
+}
+
+.button {
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.button:hover {
+    background-color: #0d8bd9;
+}
+
+.button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#buyukDiv {
+    background-color: orangered;
+}

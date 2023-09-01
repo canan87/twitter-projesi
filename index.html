@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet At</title>
+
+    <!--FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Stil Dosyası-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--En Dış Kapsayıcı-->
+
+    <div class="wrapper">
+        <!--Tweet Kısmının Olacağı Yer-->
+        <div class="input-box">
+            <!--Yazılan tweetin görüleceği ksım-->
+            <div class="tweet-area">
+                <span class="placeholder">Neler Oluyor</span>
+                <div class="input editable" contenteditable="true" spellcheck="false"></div>
+                <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+            </div>
+            <!--Yazılan tweetin görüleceği ksım-->
+
+            <div class="privacy">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Everyone can reply</span>
+            </div>
+        </div>
+        <!--Tweet Kısmının Olacağı Yer-->
+        <div class="bottom">
+            <!--Icon Bar-->
+            <ul class="icons">
+                <li><i class="fa-solid fa-file-image"></i></li>
+                <li><i class="fa-solid fa-location-dot"></i></li>
+                <li><i class="fa-regular fa-face-smile"></i></li>
+                <li><i class="fa-regular fa-user"></i></li>
+            </ul>
+            <!--Icon Bar-->
+
+            <!--Tweet butonu ve sayaç alanı-->
+            <div class="content">
+                <span class="counter">100</span>
+                <button class="button">Tweet</button>
+            </div>
+        </div>
+    </div>
+
+    <!--En Dış Kapsayıcı-->
+
+
+
+
+    <!--Script Bağlantı-->
+    <script src="main.js"></script>
+</body>
+
+</html>
